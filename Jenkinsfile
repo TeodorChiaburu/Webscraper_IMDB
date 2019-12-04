@@ -1,10 +1,8 @@
-pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                sh 'python --version'
-            }
-        }
+node {
+    stage('SCM Checkout') {
+        git 'https://github.com/TeodorChiaburu/Webscraper_IMDB'
+    }
+    stage('Compile-Package') {
+        sh 'mvn package'   
     }
 }
