@@ -3,6 +3,6 @@ node {
         git 'https://github.com/TeodorChiaburu/Webscraper_IMDB'
     }
     stage('Compile-Package') {
-        sh 'mvn package'   
+        bat 'mvn package'   
     }
 }
