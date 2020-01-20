@@ -6,7 +6,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-import numpy as np
+
 
 # get the address of the IMDB page with most popular 100 films
 top_url = "https://www.imdb.com/chart/moviemeter?sort=rk,asc&mode=simple&page=1"
@@ -28,12 +28,11 @@ list_csv = []
 table_pop = soup.find("tbody", {"class": "lister-list"})
 #print(table_pop)
 
-# iterate through all the rows in the table
-for row_pop in table_pop.find_all("tr"):
+# lambda function to replace the brackets in a string with an empty string
+replace_brackets = lambda s : s.replace("(", "").replace(")", "")  
     
-    # every row info will be stored in a dictionary
-    dict_row = {}
-    
+def add_films(dict_row, row_pop):
+        
     # get section with title, year and increase/drop in popularity
     title_col = row_pop.find("td", {"class": "titleColumn"})
     #print(title_col.text.replace("\n", " "))
@@ -44,11 +43,12 @@ for row_pop in table_pop.find_all("tr"):
     
     # get span containing release year and popularity increase/drop
     year_and_pop = title_col.find_all("span")
-    dict_row["Year"] = year_and_pop[0].text.replace("(", "").replace(")", "")
+    dict_row["Year"] = replace_brackets(year_and_pop[0].text) 
     
     # if there is no popularity span, then the popularity stayed the same
-    try:
-        pop = int(year_and_pop[1].text.replace("(", "").replace(")", "").replace("\n", " ").replace(",", ""))
+    try:        
+        pop = replace_brackets(year_and_pop[1].text)
+        pop = int(pop.replace("\n", " ").replace(",", ""))
         
         # pop is an absolute value -> find out whether it's an increase or decrease
         titlemeter = year_and_pop[1].find("span", {"class": "up"})
@@ -78,7 +78,19 @@ for row_pop in table_pop.find_all("tr"):
         dict_row["Votes"]  = 0
         
     list_csv.append(dict_row)
-    
+
+# iterate through all the rows in the table
+# function 'action' passed as argument
+def iterate_films(table, action):
+
+    for row_pop in table.find_all("tr"):
+        
+        # every row info will be stored in a dictionary
+        dict_row = {}
+        
+        action(dict_row, row_pop)
+            
+iterate_films(table_pop, add_films)     
 #print(list_csv)
 
 # turn the list into a data frame to save it as csv
@@ -87,4 +99,4 @@ df = pd.DataFrame(list_csv)
 df.index.name = "Rank"
 df.index += 1
 df.to_csv("imdb_top100.csv")
-print(df)
+#print(df)
