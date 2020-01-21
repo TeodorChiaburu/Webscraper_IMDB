@@ -1,6 +1,6 @@
 node {
     stage('SCM Checkout') {
-        git 'https://github.com/TeodorChiaburu/Webscraper_IMDB'
+        git 'https://github.com/TeodorChiaburu/Webscraper_IMDB/src/main/resources'
     }
     stage('Compile-Package') {
         // get maven home path
