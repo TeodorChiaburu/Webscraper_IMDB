@@ -1,13 +1,12 @@
 node {
     stage('SCM Checkout') {
-        git 'https://github.com/TeodorChiaburu/Webscraper_IMDB/src/main/resources'
+        git 'https://github.com/TeodorChiaburu/Webscraper_IMDB/tree/master/src/main/resources'
     }
     stage('Compile-Package') {
         // get maven home path
         def mvnHome = tool name: 'maven-3', type: 'maven'
         bat "${mvnHome}/bin/mvn package"  
     }
-    
     stage('SonarQube Analysis') {
         def mvnHome = tool name: 'maven-3', type: 'maven'
         withSonarQubeEnv('sonar-7') {
