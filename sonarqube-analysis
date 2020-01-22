@@ -10,7 +10,8 @@ node {
     stage('SonarQube Analysis') {
         def mvnHome = tool name: 'maven-3', type: 'maven'
         withSonarQubeEnv('sonar-7') {
-            bat "${mvnHome}/bin/mvn sonar:sonar"
+            //bat "${mvnHome}/bin/mvn sonar:sonar"
+            bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
         }
     }
 }
