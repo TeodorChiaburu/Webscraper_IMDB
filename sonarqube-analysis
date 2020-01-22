@@ -14,7 +14,7 @@ node {
         //}
     //}
     stage('SonarQube analysis') {
-        def scannerHome = tool 'SonarQube Scanner 7.8';
+        def scannerHome = tool name: 'sonar-7'
         withSonarQubeEnv('sonar-7') {
             bat "${scannerHome}/bin/sonar-scanner"
         }
