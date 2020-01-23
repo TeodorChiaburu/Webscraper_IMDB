@@ -1,4 +1,4 @@
-from Webscrap_IMDB_Script import Webscraper, TestWebscraper
+from Webscrap_IMDB_Library import Webscraper, TestWebscraper
 
 if __name__ == '__main__':
     
