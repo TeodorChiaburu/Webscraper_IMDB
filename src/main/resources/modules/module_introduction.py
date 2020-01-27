@@ -1,4 +1,4 @@
-# Function to print username and date of opening document
+# function to print username and date of opening document
 def print_introduction(first_name, last_name):
     
     from datetime import date
