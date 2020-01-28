@@ -17,3 +17,21 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
   - [others](proofs/sonarqube_others.png): such as lines of code, percent of comment lines, cyclomatic and cognitive complexity, number of (open) issues
   
   An overview of the metrics can be seen [here](proofs/sonarqube_overview_1.png) and [here](proofs/sonarqube_overview_2.png).
+  
+- [x] **Clean Code Development**
+  Refer to the code for the [library](src/main/resources/Webscrap_IMDB_Library) and the [main script](src/test/resources/Webscrap_IMDB_Test):
+  - there is no useless/commented out code
+  - sufficient documentation at the library level, where user should get an insight into what each class does
+  - readability: code can be read as plain English (e.g. lines 155 or 179 in library)
+  - precise naming of variables (e.g. *top_url, list_csv, soup, row_pop, dict_row, title_col*) and functions/methods (e.g. *replace_brackets, get_table, iterate_films, add_films, test_shape, test_isnan*)
+  - tests for states of variables: see class *TestWebscraper*
+  - fields define state: temporary variables are only declared within local scope (e.g. *dict_row* on line 67)
+  - correct exception handling: in method *add_films* of class *Webscraper* and testing methods of class *TestWebscraper*
+  - avoid negative conditionals (e.g. line 95 in library)
+  - DRY: there are no pieces of code that repeat themselves (no duplications in *SonarQube*)
+  - KISS: simple function definitions (e.g. line 16 in library)
+  - 'divide and conquer': no long method chaining (e.g. lines 76-79, 110-112)
+  - assertions: in all the testing methods of *TestWebscraper*
+  - split long methods: see methods *add_films* and *iterate_films* in class *Webscraper* (also definition of *replace_brackets* outside the class)
+  - design and implementation do not overlap: there are two separate files for the classes and their instantiation
+  - consistency: use of term 'webscraper' in the name of the class *TestWebscraper* to match the tested class *Webscraper*; also both methods that are applied on film data have the term 'film' in them: *add_films* and *iterate_films*
