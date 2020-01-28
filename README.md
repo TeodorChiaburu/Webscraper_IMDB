@@ -19,6 +19,7 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
   An overview of the metrics can be seen [here](proofs/sonarqube_overview_1.png) and [here](proofs/sonarqube_overview_2.png).
   
 - [x] **Clean Code Development**
+
   Refer to the code for the [library](src/main/resources/Webscrap_IMDB_Library) and the [main script](src/test/resources/Webscrap_IMDB_Test):
   - there is no useless/commented out code
   - sufficient documentation at the library level, where user should get an insight into what each class does
