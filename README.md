@@ -11,7 +11,7 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
 - [x] **Metrics** (via *SonarQube*)
   - [reliability](proofs/sonarqube_reliability.png)
   - [security](proofs/sonarqube_security.png)
-  - [maintainibility](proofs/sonarqube_maintainibility.png)  
+  - [maintainability](proofs/sonarqube_maintainability.png)  
   - [duplications](proofs/sonarqube_duplications.png)
   - [coverage](proofs/sonarqube_coverage.png): *SonarQube* sets a high par when it comes to test coverage (min. 80%). Given that *TestWebscraper* is fairly small and only checks three test cases, my code only reached little over 9% coverage. 
   - [others](proofs/sonarqube_others.png): such as lines of code, percent of comment lines, cyclomatic and cognitive complexity, number of (open) issues
