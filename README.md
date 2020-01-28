@@ -4,6 +4,6 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
 
 ## Tasks
 - [x] **UML diagrams**
-  - class diagram
-  - object diagram
-  - use case diagram
+  - [class diagram](proofs/uml_klassendiagramm.png): shows the structure of the two main classes used for this program: *Webscraper* and *TestWebscraper*
+  - [object diagram](proofs/uml_objektdiagramm.png): shows the values of the attributes of the object *webscraper* after being instantiated
+  - [use case diagram](proofs/uml_anwendungsfalldiagramm.png): shows how the script runs and what the expected result is
