@@ -48,3 +48,7 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
 - [x] **Continuous Delivery**
 
   See [Jenkinsfile](Jenkinsfile) and [Jenkins Pipeline](proofs/jenkins_build_pipeline.png). The building process was successful ([proof1](proofs/jenkins_build_sun.png)) and also the integration of *SonarQube* ([proof2](proofs/jenkins_build_sonarqube.png)).
+  
+- [x] **IDE**
+
+  For coding this project I used *Spyder* (snapshot [here](proofs/spyder.png)). My favourite key-shortcuts are *Ctrl+S* (save), *Ctrl+1* (comment/uncomment), *(Shift+)Tab* (indent/unindent), *Ctrl+F* (find), *Ctrl+R* (replace), *F5* (run).
