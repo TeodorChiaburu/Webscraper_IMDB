@@ -39,7 +39,7 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
   
 - [x] **Build Management**
 
-  I used *Maven* (see successful built in *Jenkins* [here](proofs/jenkins_build_maven.png)).
+  I used *Maven* (see successful built in *Jenkins* [here](proofs/jenkins_build_maven.png) and even more evidence in [pom.xml](pom.xml)).
   
 - [x] **Unit Tests**
 
