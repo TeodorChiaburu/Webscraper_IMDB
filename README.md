@@ -57,5 +57,12 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
 
   I wrote a simple [DSL example](src/main/resources/dsl_example.py). It prints a [greeting message](proofs/dsl_print.png), by calling the function defined in [module_introduction.py](src/main/resources/modules/module_introduction.py) with the arguments written in [dsl_source](src/main/resources/dsl_source.txt).
 
-
+- [x] **Functional Programming**
+  - lambda function: line 16 in the library
+  - function passed as parameter: line 58 in the library
+  - even the construction of the library itself, that contains classes with methods that encompass all the program directives, adheres to the principles of functional programming
+  
+  
+## Bonus
+- Logical Solver: the testing methods in *TestWebscraper* already have more or less the structure of a logical solver
 
