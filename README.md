@@ -13,7 +13,7 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
   - [security](proofs/sonarqube_security.png)
   - [maintainability](proofs/sonarqube_maintainability.png)  
   - [duplications](proofs/sonarqube_duplications.png)
-  - [coverage](proofs/sonarqube_coverage.png): *SonarQube* sets a high par when it comes to test coverage (min. 80%). Given that *TestWebscraper* is fairly small and only checks three test cases, my code only reached little over 9% coverage. 
+  - [coverage](proofs/sonarqube_coverage.png): *SonarQube* sets a high par when it comes to test coverage (min. 80%). Given that *TestWebscraper* is fairly small and only checks three test cases, my code only reached little over 9% coverage. [Here](src/test/resources/coverage.xml) is a link to the xml file of the generated coverage analysis. 
   - [others](proofs/sonarqube_others.png): such as lines of code, percent of comment lines, cyclomatic and cognitive complexity, number of (open) issues
   
   An overview of the metrics can be seen [here](proofs/sonarqube_overview_1.png) and [here](proofs/sonarqube_overview_2.png).
