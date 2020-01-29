@@ -8,7 +8,7 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
   - [object diagram](proofs/uml_objektdiagramm.PNG): shows the values of the attributes of the object *webscraper* after being instantiated
   - [use case diagram](proofs/uml_anwendungsfalldiagramm.png): shows how the script runs and what the expected result is
   
-- [x] **Metrics** (via *SonarQube*)
+- [x] **Metrics** (via *SonarQube*, see [node definition](sonarqube-analysis))
   - [reliability](proofs/sonarqube_reliability.png)
   - [security](proofs/sonarqube_security.png)
   - [maintainability](proofs/sonarqube_maintainability.png)  
@@ -47,4 +47,4 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
   
 - [x] **Continuous Delivery**
 
-  See [Jenkins Pipeline](proofs/jenkins_build_pipeline.png). The build was successful ([proof1](proofs/jenkins_build_sun.png)) and also the integration of *SonarQube* ([proof2](proofs/jenkins_build_sonarqube.png)).
+  See [Jenkins Pipeline](proofs/jenkins_build_pipeline.png). The building process was successful ([proof1](proofs/jenkins_build_sun.png)) and also the integration of *SonarQube* ([proof2](proofs/jenkins_build_sonarqube.png)).
