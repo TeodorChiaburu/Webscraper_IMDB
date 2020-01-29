@@ -52,3 +52,10 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
 - [x] **IDE**
 
   For coding this project I used *Spyder* (snapshot [here](proofs/spyder.png)). My favourite key-shortcuts are *Ctrl+S* (save), *Ctrl+1* (comment/uncomment), *(Shift+)Tab* (indent/unindent), *Ctrl+F* (find), *Ctrl+R* (replace), *F5* (run).
+
+- [x] **DSL**
+
+  I wrote a simple [DSL example](src/main/resources/dsl_example.py). It prints a [greeting message](proofs/dsl_print.png), by calling the function defined in [module_introduction.py](src/main/resources/modules/module_introduction.py) with the arguments written in [dsl_source](src/main/resources/dsl_source.txt).
+
+
+
