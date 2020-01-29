@@ -36,3 +36,7 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
   - split long methods: see methods *add_films* and *iterate_films* in class *Webscraper* (also definition of *replace_brackets* outside the class)
   - design and implementation do not overlap: there are two separate files for the classes and their instantiation
   - consistency: use of term 'webscraper' in the name of the class *TestWebscraper* to match the tested class *Webscraper*; also both methods that are applied on film data have the term 'film' in them: *add_films* and *iterate_films*
+  
+- [x] **Build Management**
+
+  I used *Maven* (see successful built in *Jenkins* [here](proofs/jenkins_build_maven.png)).
