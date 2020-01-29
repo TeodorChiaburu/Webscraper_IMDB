@@ -4,7 +4,7 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
 
 ## Tasks
 - [x] **UML diagrams**
-  - [class diagram](proofs/uml_klassendiagramm.PNG): shows the structure of the [two main classes](src/main/resources/Webscrap_IMDB_Library) used for this program: *Webscraper* and *TestWebscraper*
+  - [class diagram](proofs/uml_klassendiagramm.PNG): shows the structure of the [two main classes](src/main/resources/Webscrap_IMDB_Library.py) used for this program: *Webscraper* and *TestWebscraper*
   - [object diagram](proofs/uml_objektdiagramm.PNG): shows the values of the attributes of the object *webscraper* after being instantiated
   - [use case diagram](proofs/uml_anwendungsfalldiagramm.png): shows how the script runs and what the expected result is
   
@@ -20,7 +20,7 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
   
 - [x] **Clean Code Development**
 
-  Refer to the code for the [library](src/main/resources/Webscrap_IMDB_Library) and the [main script](src/test/resources/Webscrap_IMDB_Test):
+  Refer to the code for the [library](src/main/resources/Webscrap_IMDB_Library.py) and the [main script](src/test/resources/Webscrap_IMDB_Test.py):
   - there is no useless/commented out code
   - sufficient documentation at the library level, where user should get an insight into what each class does
   - readability: code can be read as plain English (e.g. lines 155 or 179 in library)
@@ -43,7 +43,7 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
   
 - [x] **Unit Tests**
 
-  Integrated in *Maven*, take a look at the [test script](src/test/resources/Webscrap_IMDB_Test).
+  Integrated in *Maven*, take a look at the [test script](src/test/resources/Webscrap_IMDB_Test.py).
   
 - [x] **Continuous Delivery**
 
