@@ -47,4 +47,4 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
   
 - [x] **Continuous Delivery**
 
-  See [Jenkins Pipeline](proofs/jenkins_build_pipeline.png). The building process was successful ([proof1](proofs/jenkins_build_sun.png)) and also the integration of *SonarQube* ([proof2](proofs/jenkins_build_sonarqube.png)).
+  See [Jenkinsfile](Jenkinsfile) and [Jenkins Pipeline](proofs/jenkins_build_pipeline.png). The building process was successful ([proof1](proofs/jenkins_build_sun.png)) and also the integration of *SonarQube* ([proof2](proofs/jenkins_build_sonarqube.png)).
