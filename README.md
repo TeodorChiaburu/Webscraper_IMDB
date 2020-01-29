@@ -40,3 +40,11 @@ The program scrapes data about the current top 100 most popular movies on IMDB. 
 - [x] **Build Management**
 
   I used *Maven* (see successful built in *Jenkins* [here](proofs/jenkins_build_maven.png)).
+  
+- [x] **Unit Tests**
+
+  Integrated in *Maven*, take a look at the [test script](src/test/resources/Webscrap_IMDB_Test).
+  
+- [x] **Continuous Delivery**
+
+  See [Jenkins Pipeline](proofs/jenkins_build_pipeline.png). The build was successful ([proof1](proofs/jenkins_build_sun.png)) and also the integration of *SonarQube* ([proof2](proofs/jenkins_build_sonarqube.png)).
